@@ -17,13 +17,15 @@ public class Contador {
             System.out.println("Digite o segundo número: ");
             int num2 = scanner.nextInt();
             scanner.close();
-            if (num1 > num2) {
+            if (num1 >= num2) {
                 throw new ParametrosInvalidosException(num1, num2);
             }
+            else{
             System.out.println("Excelente! Foram digitados os números " + num1 + " " + "e" + " " + num2);
             System.out.println("De " + num1 + " até o " + num2 + " temos os seguintes números: ");
             for (int lista = num1; lista <= num2; lista++) {
                 System.out.print(lista + " ");
+            }
             }
         } catch (InputMismatchException i) {
             System.out.println("Ocorreu um erro.");

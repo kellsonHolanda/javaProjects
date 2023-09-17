@@ -5,7 +5,7 @@ public class ParametrosInvalidosException extends Exception {
     
     public ParametrosInvalidosException(int a, int b){
         System.out.println("Ocorreu um erro de 'ParametrosInvalidosException'.");
-        System.out.print("Infelizemente o primeriro número é maior que o segundo número.");
+        System.out.print("Infelizemente o primeriro número é maior ou igual ao segundo número.");
     }
 }
 
